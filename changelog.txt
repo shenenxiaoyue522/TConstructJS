@@ -1,0 +1,8 @@
+1.0.2
+- Fix crash on cooling time
+
+1.0.1
+- recipe helper refactor
+
+1.0.0
+- Initial release

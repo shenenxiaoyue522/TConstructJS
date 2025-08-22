@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.xiaoyue.tconstruct_js.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "tconstruct_js.refmap.json",
+  "mixins": [
+  ],
+  "minVersion": "0.8",
+  "client": [
+  ]
+}
