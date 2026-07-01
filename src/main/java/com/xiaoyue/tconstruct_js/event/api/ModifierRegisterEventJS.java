@@ -1,4 +1,4 @@
-package com.xiaoyue.tconstruct_js.event;
+package com.xiaoyue.tconstruct_js.event.api;
 
 import com.xiaoyue.tconstruct_js.content.ModifierBuilder;
 import dev.latvian.mods.kubejs.KubeJS;

@@ -1,4 +1,4 @@
-package com.xiaoyue.tconstruct_js.event;
+package com.xiaoyue.tconstruct_js.event.api;
 
 import dev.latvian.mods.kubejs.event.EventJS;
 import net.minecraft.world.entity.EquipmentSlot;

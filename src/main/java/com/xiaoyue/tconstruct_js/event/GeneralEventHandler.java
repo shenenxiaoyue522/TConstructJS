@@ -1,5 +1,7 @@
 package com.xiaoyue.tconstruct_js.event;
 
+import com.xiaoyue.tconstruct_js.event.api.TConEventGroup;
+import com.xiaoyue.tconstruct_js.event.api.TinkerToolChangeEventJS;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import slimeknights.tconstruct.library.events.ToolEquipmentChangeEvent;

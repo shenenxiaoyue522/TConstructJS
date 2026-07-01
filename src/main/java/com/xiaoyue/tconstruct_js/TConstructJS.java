@@ -1,8 +1,8 @@
 package com.xiaoyue.tconstruct_js;
 
 import com.mojang.logging.LogUtils;
-import com.xiaoyue.tconstruct_js.event.ModifierRegisterEventJS;
-import com.xiaoyue.tconstruct_js.event.TConEventGroup;
+import com.xiaoyue.tconstruct_js.event.api.ModifierRegisterEventJS;
+import com.xiaoyue.tconstruct_js.event.api.TConEventGroup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -26,7 +26,7 @@ public class TConstructJS {
 
     public void initModifier(ModifierManager.ModifierRegistrationEvent event) {
         var eventJs = new ModifierRegisterEventJS();
-        TConEventGroup.REGISTRY.post(eventJs);
+        TConEventGroup.MODIFIER.post(eventJs);
         for (var entry : eventJs.MODIFIER_MAP.entrySet()) {
             event.registerStatic(entry.getKey(), entry.getValue());
         }

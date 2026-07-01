@@ -1,7 +1,9 @@
 package com.xiaoyue.tconstruct_js.plugin;
 
+import com.xiaoyue.tconstruct_js.content.material.recipe.MaterialRecipeBuilder;
+import com.xiaoyue.tconstruct_js.content.material.recipe.MaterialSmeltingRecipeBuilder;
 import com.xiaoyue.tconstruct_js.content.recipe.*;
-import com.xiaoyue.tconstruct_js.event.TConEventGroup;
+import com.xiaoyue.tconstruct_js.event.api.TConEventGroup;
 import com.xiaoyue.tconstruct_js.utils.SimpleTCon;
 import dev.latvian.mods.kubejs.KubeJSPlugin;
 import dev.latvian.mods.kubejs.recipe.schema.RegisterRecipeSchemasEvent;
@@ -42,5 +44,7 @@ public class TConJSPlugin extends KubeJSPlugin {
         event.add("TinkerToolStats", ToolStats.class);
         event.add("TinkerDamageHelper", ToolDamageUtil.class);
         event.add("TinkerSlotType", SlotType.class);
+        event.add("MaterialSmeltingRecipeBuilder", MaterialSmeltingRecipeBuilder.class);
+        event.add("MaterialRecipeBuilder", MaterialRecipeBuilder.class);
     }
 }
